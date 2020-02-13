@@ -50,7 +50,7 @@ class App extends Component {
             </section>
           <div className="cards-slider">
             <div className="cards-slider-wrapper">
-            {properties.map(property => <Card key={properties._id} property={property} />)}
+            {properties.map(property => <Card key={property._id} property={property} />)}
             </div>
           </div>
 

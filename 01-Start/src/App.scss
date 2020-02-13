@@ -114,13 +114,16 @@ section {
 /* #endregion */
 
 /* #region cards slider */
+
 .cards-slider-wrapper {
   display: flex;
-  .card {
+  .card{
     flex: 1;
-    min-width: 200px;
+
   }
 }
+
+
 .cards-slider {
   position: relative;
   max-width: 226px;
