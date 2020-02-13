@@ -35,11 +35,11 @@ class App extends Component {
       <div className="App">
 
         <button 
-          onClick={() => this.nextProperty()} 
+          onClick={this.nextProperty} 
           disabled={property.index === data.properties.length-1}
         >Next</button>
         <button 
-          onClick={() => this.prevProperty()} 
+          onClick={this.prevProperty} 
           disabled={property.index === 0}
         >Prev</button>
 
