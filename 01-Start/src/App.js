@@ -30,7 +30,7 @@ class App extends Component {
   }
 
   render() {
-    const {property} = this.state;
+    const {properties, property} = this.state;
     return (
       <div className="App">
 
@@ -48,8 +48,11 @@ class App extends Component {
                 <img src={logo} className="App-logo" alt="logo" />
                 <h1>Image slideshow React tutorial.</h1>
             </section>
-
-            <Card property={property} />
+          <div className="cards-slider">
+            <div className="cards-slider-wrapper">
+            {properties.map(property => <Card key={properties._id} property={property} />)}
+            </div>
+          </div>
 
         </div>
       </div>

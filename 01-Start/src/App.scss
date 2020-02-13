@@ -115,7 +115,11 @@ section {
 
 /* #region cards slider */
 .cards-slider-wrapper {
-  display: flex; 
+  display: flex;
+  .card {
+    flex: 1;
+    min-width: 200px;
+  }
 }
 .cards-slider {
   position: relative;
